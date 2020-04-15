@@ -1,0 +1,31 @@
+.navbar .container-fluid, .navbar-default{
+    background-color: white;
+    padding: 5px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0px;
+}
+
+.navbar {
+    border-bottom: 1px solid $c-teal;
+}
+
+.navlogo{
+    font-size: 40px;
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: $menlo;
+    &:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    &:visited{
+        color: black;
+    }
+}

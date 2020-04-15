@@ -1,0 +1,52 @@
+.projectsH{
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    & p{
+        margin: 40px;
+    }
+
+    &Game{
+        background-color: #F6BDC4;
+        &Btn{
+            background-color: white;
+            color: black;
+            padding: 10px 30px 10px 30px;
+            font-size: 18px;
+            transition-duration: 0.5s;
+        }
+        &Btn:hover{
+            background-color: $c-teal;
+            color: black;
+        }
+    }
+
+    &Outdrop{
+        background-color: #5CC1EA;
+        &Btn{
+            @extend .projectGameBtn;
+        }
+        &Btn:hover{
+            @extend .projectGameBtn:hover;
+        }
+    }
+
+    &Nasa{
+        background-color: #31608B;
+        &Btn{
+            @extend .projectGameBtn;
+        }
+        &Btn:hover{
+            @extend .projectGameBtn:hover;
+        }
+    }
+}
+

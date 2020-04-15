@@ -1,0 +1,15 @@
+.footer{
+    background-color: $c-teal;
+    margin-top: 100px;
+    height: 200px;
+    text-align: center;
+    font-family: $open-sans;
+    & ul li {
+        display: inline-block;
+        margin: 20px;
+    }
+    & ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

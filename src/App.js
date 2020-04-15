@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "bootstrap3/dist/css/bootstrap.min.css";
+import "./scss/styles.scss";
 
-function App() {
-  return (
+import Loading from "./pages/Loadingpage";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
+
+export default function App({children}){
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  const updateLoaded = () => {
+    setHasLoaded(true);
+  }
+
+
+  return hasLoaded ?
+  (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      {children}
+      <Footer />
     </div>
-  );
+  ) :
+  (
+    <Loading updateLoadingStatus={updateLoaded} />
+  )
 }
-
-export default App;

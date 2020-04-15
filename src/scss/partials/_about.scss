@@ -1,0 +1,117 @@
+//gameboy
+
+.gameboy{
+    background-color: $c-pink;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    margin: 20px;
+
+    &Container{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    
+    &Top{
+        border: 20px solid $c-black;
+        height: 240px;
+        border-radius: 5px;
+    }
+
+    &Under{
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        &Left img{
+            width: 60px;
+            margin-top: 50px;
+        }
+        &Right img{
+            margin: 5px;
+            width: 40px;
+        }
+        &Right img:first-child{
+            margin-top: 70px;
+        }
+        &RightButtons{
+            margin-left: 40px;
+        }
+    }
+}
+
+.gameboyFirst{
+    background-image: url("./../../resources/photos/gamescreen.png");
+}
+
+.gameboyFourth{
+    background-image: url("./../../resources/photos/gamescreen2.png");
+}
+
+.gameboyQuote{
+    font-size: 17px;
+}
+
+.gameboyStory{
+    background-color: rgb(199, 199, 199);
+    & p{
+        font-family: $pixel;
+        padding: 5px;
+    }
+}
+
+//stats
+
+.about{
+    margin: 0 auto;
+    background-color: $c-teal;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 800px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 40px;
+
+    &Right{
+        grid-column: 2/4;
+        margin-top: 15px;
+    }
+
+    & p{
+        font-family: $pixel;
+    }
+
+    &Left{
+        font-size: 18px;
+        & img{
+            background-color: #C4D5D6;
+            padding: 30px;
+            -webkit-box-shadow: 10px -11px 0px 1px rgba(176,186,187,1);
+            -moz-box-shadow: 10px -11px 0px 1px rgba(176,186,187,1);
+            box-shadow: 10px -11px 0px 1px rgba(176,186,187,1);
+        }
+    }
+}
+
+//quest
+
+.quest{
+    background-color: $c-teal;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    & img{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    & p{
+        font-family: $pixel;
+    }
+}

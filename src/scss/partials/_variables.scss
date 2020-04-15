@@ -1,0 +1,30 @@
+//colours
+
+$c-teal: #84C0C6;
+$c-black: #2F2D2D;
+$c-pink: #F2A0CF;
+
+//fonts
+
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url("./../../resources/fonts/Menlo-Regular.woff") format('woff');
+}
+
+$menlo: "Menlo Regular";
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+}
+
+$open-sans: "Open Sans", sans-serif;
+
+@font-face {
+    font-family: 'PixelGameFont';
+    src: local('PixelGameFont'), url("./../../resources/fonts/PixelGameFont.ttf") format('ttf');
+}
+
+$pixel: "PixelGameFont";
