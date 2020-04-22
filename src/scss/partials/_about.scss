@@ -115,3 +115,46 @@
         font-family: $pixel;
     }
 }
+
+//cv
+
+.cv{
+    background-color: #B290F6;
+    max-width: 1200px;
+    padding: 50px;
+    margin-top: 80px;
+    margin-bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+
+    &Header{
+        border: 20px solid $c-black;
+        border-radius: 5px;
+        background-image: url("./../../resources/photos/bossbattle.png");
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 760px;
+        &:after{
+            content: "";
+            animation: grain 8s steps(10) infinite;
+            background-image: url("./../../resources/photos/papertexture.png");
+            height: 300%;
+            width: 300%;
+            opacity: 0.3;
+            position: fixed;
+        }
+    }
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }

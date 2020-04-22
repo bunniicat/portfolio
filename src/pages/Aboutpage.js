@@ -4,6 +4,7 @@ import GameboyComp from "./../components/gameboy";
 
 import pixelme from "./../resources/photos/pixelme.png";
 import quest from "./../resources/photos/quest.svg";
+import bossbattle from "./../resources/photos/bossbattle.png";
 
 export default function Aboutpage(){
     return(
@@ -49,6 +50,12 @@ export default function Aboutpage(){
                 <div className="questRight">
                     <p>NEW MAIN QUEST</p>
                     <p>taking a 360 degree turn from my original plan to pursue fashion design my current goal in life is to continue growing as a developer and create awesome designs and user experiences. let's create something stunning together!</p>
+                </div>
+            </div>
+
+            <div className="cv">
+                <div className="cvHeader">
+                    
                 </div>
             </div>
             

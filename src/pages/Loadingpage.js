@@ -18,7 +18,7 @@ export default function Loading(props){
         <>
             <div className="loadingContainer">
                 <FadeIn transitionDuration={600}>
-                <p>const [isLoading, setIsLoading] = useState(true);</p>
+                <p className="codeDisplay">const [isLoading, setIsLoading] = useState(true);</p>
                 <img src={loadinggif} alt="loading gif"></img>
                 </FadeIn>
             </div>

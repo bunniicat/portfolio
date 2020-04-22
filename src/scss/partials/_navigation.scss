@@ -29,3 +29,19 @@
         color: black;
     }
 }
+
+@media (min-width: 768px){
+.navbar-nav {
+    float: none;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (min-width: 768px) {
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+}
+}
