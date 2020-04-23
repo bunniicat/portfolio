@@ -4,29 +4,13 @@ import GameboyComp from "./../components/gameboy";
 
 import pixelme from "./../resources/photos/pixelme.png";
 import quest from "./../resources/photos/quest.svg";
-import bossbattle from "./../resources/photos/bossbattle.png";
+import cross from "./../resources/photos/cross.svg";
+import controlwhite from "./../resources/photos/controlwhite.svg";
+import controlblack from "./../resources/photos/controlblack.svg";
 
 export default function Aboutpage(){
     return(
         <>
-
-            <div className="about">
-                <div className="aboutLeft">
-                    <p>PLAYER: NINA NGUYEN</p>
-                    <img src={pixelme} alt="pixel character"></img>
-                </div>
-                <div className="aboutRight">
-                    <p>LEVEL/AGE: 22</p>
-                    <p>SPEC: web design, web development</p>
-                    <p>PERSONALITY: determined, creative</p>
-                    <p>PORTFOLIO: www.######.com</p>
-                    <p>LANG: english, norwegian, vietnamese</p>
-                    <br />
-                    <p>FUN FACT</p>
-                    <p>was on track to study fashion design, ended up <br />
-                    writing scripts instead and realizing it was amazing.</p>
-                </div>
-            </div>
 
             <div className="gameboyContainer">
                 <GameboyComp gameboyClass="gameboyTop gameboyFirst" />
@@ -43,20 +27,52 @@ export default function Aboutpage(){
                 
             </div>
 
-            <div className="quest">
-                <div className="questLeft">
-                    <img src={quest} alt="quest icon"></img>
+            <div className="about">
+
+                <div className="stats">
+                    <div className="statsLeft">
+                        <p>PLAYER: NINA NGUYEN</p>
+                        <img src={pixelme} alt="pixel character"></img>
+                    </div>
+                    <div className="statsRight">
+                        <p>LEVEL/AGE: 22</p>
+                        <p>SPEC: web design, web development</p>
+                        <p>PERSONALITY: determined, creative</p>
+                        <p>PORTFOLIO: www.######.com</p>
+                        <p>LANG: english, norwegian, vietnamese</p>
+                        <br />
+                        <p>FUN FACT</p>
+                        <p>was on track to study fashion design, ended up <br />
+                        writing scripts instead and realizing it was amazing.</p>
+                    </div>
                 </div>
-                <div className="questRight">
-                    <p>NEW MAIN QUEST</p>
-                    <p>taking a 360 degree turn from my original plan to pursue fashion design my current goal in life is to continue growing as a developer and create awesome designs and user experiences. let's create something stunning together!</p>
+
+                <div className="quest">
+                    <div className="questLeft">
+                        <img src={quest} alt="quest icon"></img>
+                 </div>
+                    <div className="questRight">
+                        <p>NEW MAIN QUEST</p>
+                        <p>taking a 360 degree turn from my original plan to pursue fashion design my current goal in life is to continue growing as a developer and create awesome designs and user experiences. let's create something stunning together!</p>
+                    </div>
                 </div>
             </div>
 
+
+
             <div className="cv">
-                <div className="cvHeader">
-                    
+
+                <div className="gameConsole">
+                    <div className="gameConsoleLeft">
+                        <img src={cross} alt="game controller"></img>
+                    </div>
+                    <div className="gameConsoleScreen"></div>
+                    <div className="gameConsoleRight">
+                        <img src={controlwhite} alt="gameboy controller"></img>
+                        <img src={controlblack} alt="gameboy controller"></img>
+                    </div>
                 </div>
+
             </div>
             
         </>

@@ -62,17 +62,24 @@
     }
 }
 
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 3em;
+}
+
 //stats
 
-.about{
-    margin: 0 auto;
+.stats{
     background-color: $c-teal;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    max-width: 800px;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 40px;
+    width: 100%;
 
     &Right{
         grid-column: 2/4;
@@ -81,6 +88,7 @@
 
     & p{
         font-family: $pixel;
+        margin-left: 20px;
     }
 
     &Left{
@@ -100,61 +108,75 @@
 .quest{
     background-color: $c-teal;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    width: 100%;
     & img{
         width: 200px;
         margin-left: auto;
         margin-right: auto;
         display: block;
+        margin-top: 20px;
     }
     & p{
         font-family: $pixel;
+        margin-top: 30px;
     }
 }
 
-//cv
+//game console for cv
 
-.cv{
-    background-color: #B290F6;
-    max-width: 1200px;
-    padding: 50px;
-    margin-top: 80px;
-    margin-bottom:0;
-    margin-left: auto;
-    margin-right: auto;
+.gameConsole{
+    background-color: #71618E;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1;
+    max-width: 1100px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
 
-    &Header{
-        border: 20px solid $c-black;
+    &Left img{
+        width: 70px;
+        margin-top: 100px;
+        margin-left: 35px;
+    }
+    &Right img{
+        width: 50px;
+        margin: 5px;
+        margin-top: 270px;
+    }
+    &Right img:first-child{
+        margin-top: 340px;
+        margin-left: 25px;
+    }
+
+    &Left{
+        grid-template-columns: 1/2;
+    }
+
+    &Right{
+        grid-template-columns: 3/4;
+    }
+
+    &Screen{
+        border: 30px solid $c-black;
         border-radius: 5px;
         background-image: url("./../../resources/photos/bossbattle.png");
+        height: 440px;
         background-repeat: no-repeat;
-        height: 450px;
-        width: 760px;
-        &:after{
-            content: "";
-            animation: grain 8s steps(10) infinite;
-            background-image: url("./../../resources/photos/papertexture.png");
-            height: 300%;
-            width: 300%;
-            opacity: 0.3;
-            position: fixed;
-        }
+        grid-column: 2/3;
     }
 }
 
-@keyframes grain {
-    0%, 100% { transform:translate(0, 0) }
-    10% { transform:translate(-5%, -10%) }
-    20% { transform:translate(-15%, 5%) }
-    30% { transform:translate(7%, -25%) }
-    40% { transform:translate(-5%, 25%) }
-    50% { transform:translate(-15%, 10%) }
-    60% { transform:translate(15%, 0%) }
-    70% { transform:translate(0%, 15%) }
-    80% { transform:translate(3%, 35%) }
-    90% { transform:translate(-10%, 10%) }
-  }
+// cv 
+
+.cv{
+    border: 2px solid $c-teal;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80%;
+}
+
