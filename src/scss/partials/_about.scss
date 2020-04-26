@@ -19,6 +19,10 @@
         border: 20px solid $c-black;
         height: 240px;
         border-radius: 5px;
+        & p{
+            font-family: $menlo !important;
+            font-size: 12px;
+        }
     }
 
     &Under{
@@ -87,7 +91,7 @@
     }
 
     & p{
-        font-family: $pixel;
+        font-family: $menlo;
         margin-left: 20px;
     }
 
@@ -120,7 +124,7 @@
         margin-top: 20px;
     }
     & p{
-        font-family: $pixel;
+        font-family: $menlo;
         margin-top: 30px;
     }
 }
@@ -184,7 +188,7 @@
             margin: 40px;
             padding: 30px;
             & p{
-                font-family: $pixel;
+                font-family: $menlo;
                 font-size: 18px;
             }
             &Education{
