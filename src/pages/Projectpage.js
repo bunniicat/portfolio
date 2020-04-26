@@ -17,6 +17,7 @@ export default function Projectpage(){
         description="Dating application inspired game of thrones board game developed for submission for NOROFF FEU2 Semester Project. Developed with HTML, CSS &#38; Javascript."
         btnClass="btn btn-primary projectGameBtn"
         btnText="Website link"
+        linkUrl="https://relaxed-noyce-737d45.netlify.app"
         />
         <ProjectComp projectClass="project projectOutdrop"
         imageUrl={outdrop}
@@ -33,6 +34,7 @@ export default function Projectpage(){
         description="Informative website about NASA with information conveyed simply with children as the primary target group. Developed with HTML, CSS &#38; Javascript."
         btnClass="btn btn-primary projectNasaBtn"
         btnText="Website link"
+        linkUrl="http://bunnycat.no/NASA/"
         />
         </>
     )

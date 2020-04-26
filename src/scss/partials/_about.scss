@@ -128,7 +128,7 @@
 //game console for cv
 
 .gameConsole{
-    background-color: #71618E;
+    background-color: $c-pink;
     display: grid;
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 1;
@@ -173,10 +173,186 @@
 // cv 
 
 .cv{
-    border: 2px solid $c-teal;
-    border-radius: 3px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 100px;
     width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+
+    &Info{
+        &Box{
+            margin: 40px;
+            padding: 30px;
+            & p{
+                font-family: $pixel;
+                font-size: 18px;
+            }
+            &Education{
+                background-color: rgb(200, 224, 226);
+                padding: 30px;
+            }
+            &Exp{
+                background-color: rgb(200, 224, 226);
+                padding: 30px;
+            }
+        }
+    }
 }
 
+.skills{
+    background-color: rgb(200, 224, 226);
+
+    &Info{
+        padding: 10px;
+        text-align: center;
+
+        &Card{
+            margin: 40px;
+            display: inline-block;
+            & img{
+                padding: 20px;
+                background-color: #C4D5D6;
+                width: 150px;
+                -webkit-box-shadow: 10px -11px 0px 1px rgba(176,186,187,1);
+                -moz-box-shadow: 10px -11px 0px 1px rgba(176,186,187,1);
+                box-shadow: 10px -11px 0px 1px rgba(176,186,187,1);
+                }
+            & p{
+                margin-top: 15px;
+                width: 150px;
+                text-align: center;
+            }
+            }
+        }
+    }
+
+    .gameScreenMobile{
+        display: none;
+    }
+
+    //mobile, small tablet
+
+    @media only screen and (max-width: 600px) {
+
+        .about{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .stats{
+            display: block;
+            margin-bottom: 30px;
+            &Left {
+                text-align: center;
+                padding-bottom: 5px;
+            }
+        }
+
+        .quest{
+            display: block;
+            &Right{
+                padding: 20px;
+            }
+        }
+
+        .gameConsole{
+            display: none;
+        
+        }
+
+        .gameScreenMobile{
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            & img{
+                width: 90%;
+                border: 10px solid $c-black;
+                border-radius: 5px;
+            }
+
+        }
+
+        .cv{
+            margin: 0 auto;
+            margin-top: 0px;
+            width: 100%;
+            padding: 10px;
+        
+            &Info{
+                &Box{
+                    margin: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+}
+
+//ex breakpoint
+@media only screen and (max-width: 1310px) and (min-width: 700px) {
+    .gameboy{
+        margin: 50px;
+    
+        &Container{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .stats{
+        margin-bottom: 30px;
+        &Left {
+            text-align: center;
+            padding-bottom: 5px;
+        }
+    }
+
+    .quest{
+        &Right{
+            padding: 10px;
+            margin-left: -100px;
+        }
+        &Left{
+            margin-left: -120px;
+            text-align: center;
+        }
+    }
+
+    .gameConsole{
+        display: none;
+    
+    }
+
+    .gameScreenMobile{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        & img{
+            width: 90%;
+            border: 10px solid $c-black;
+            border-radius: 5px;
+        }
+
+    }
+
+    .cv{
+        margin: 0 auto;
+        margin-top: 0px;
+        width: 100%;
+        padding: 10px;
+    
+        &Info{
+            &Box{
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -16,6 +16,16 @@
     color: black;
 }
 
+.logo:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.logo:focus{
+    text-decoration: none;
+    color: black;
+}
+
 .navbar-default .navbar-nav>li>a{
     color: black;
     font-size: 20px;
@@ -43,5 +53,35 @@
 .navbar-nav>li {
     float: none;
     display: inline-block;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .navbar-default .navbar-nav>li>a{
+        font-size: 13px;
+    }
+
+    .navlogo{
+        font-size: 70px;
+        position: absolute;
+        padding: 40px;
+    }
+
+    .navbar-nav{
+        float: right;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a{
+        font-size: 14px;
+    }
+
+    .navlogo{
+        font-size: 30px;
+    }
+
 }

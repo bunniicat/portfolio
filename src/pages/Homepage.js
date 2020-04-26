@@ -37,7 +37,7 @@ export default function Homepage(){
                     to be optimised across all devices.</p>
                 </div>
             </div>
-            <BtnComp linkUrl="" btnClass="btn btn-primary homeinfoBtn" btnText="message me" />
+            <BtnComp linkUrl="/contact" btnClass="btn btn-primary homeinfoBtn" btnText="message me" />
         </div>
         </>
     )

@@ -12,7 +12,7 @@ $red: #FF0000;
     font-family: 'Menlo Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Menlo Regular'), url("./../../resources/fonts/Menlo-Regular.woff") format('woff');
+    src: local('Menlo Regular'), url("/scss/Menlo-Regular.woff") format('woff');
 }
 
 $menlo: "Menlo Regular";
@@ -26,7 +26,7 @@ $open-sans: "Open Sans", sans-serif;
 
 @font-face {
     font-family: 'PixelGameFont';
-    src: local('PixelGameFont'), url("./../../resources/fonts/PixelGameFont.ttf") format('ttf');
+    src: local('PixelGameFont'), url("/scss/PixelGameFont.ttf") format('ttf');
 }
 
 $pixel: "PixelGameFont";

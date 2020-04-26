@@ -1,12 +1,19 @@
 import React from "react";
 
 import GameboyComp from "./../components/gameboy";
+import SkillComp from "./../components/skill";
 
 import pixelme from "./../resources/photos/pixelme.png";
 import quest from "./../resources/photos/quest.svg";
 import cross from "./../resources/photos/cross.svg";
 import controlwhite from "./../resources/photos/controlwhite.svg";
 import controlblack from "./../resources/photos/controlblack.svg";
+import htmlIcon from "./../resources/photos/html.svg";
+import cssIcon from "./../resources/photos/css.svg";
+import jsIcon from "./../resources/photos/js-format.svg";
+import reactIcon from "./../resources/photos/react.svg";
+import adobeIcon from "./../resources/photos/adobe.svg";
+import bossbattle from "./../resources/photos/bossbattle.png";
 
 export default function Aboutpage(){
     return(
@@ -59,7 +66,10 @@ export default function Aboutpage(){
             </div>
 
 
-
+            <div className="gameScreenMobile">
+                <img src={bossbattle} alt="bossbattle"></img>
+            </div>
+            
             <div className="cv">
 
                 <div className="gameConsole">
@@ -70,6 +80,40 @@ export default function Aboutpage(){
                     <div className="gameConsoleRight">
                         <img src={controlwhite} alt="gameboy controller"></img>
                         <img src={controlblack} alt="gameboy controller"></img>
+                    </div>
+                </div>
+
+                <div className="cvInfo">
+                    <div className="cvInfoBox">
+                        <p>EDUCATION WINDOW</p>
+                        <div className="cvInfoBoxEducation">
+                            <p>front-end development <br />
+                            higher professional degree<br />
+                            JUNE 2020<br />
+                            NOROFF SCHOOL OF TECHNOLOGY AND DIGITAL MEDIA</p>
+                        </div>
+                    </div>
+                    <div className="cvInfoBox">
+                        <p>EXPERIENCE WINDOW</p>
+                        <div className="cvInfoBoxExp">
+                            <p>waitress, hr representive<br />
+                            2013 - <br />
+                            CHOPSTIX METRO RESTAURANT</p>
+                        </div>
+                    </div>
+                    <div className="cvInfoBox">
+                        <p>SKILLS WINDOW</p>
+                        
+                        <div className="skills">
+                            <div className="skillsInfo">
+                                <SkillComp icon={htmlIcon} name="HTML" />
+                                <SkillComp icon={cssIcon} name="CSS" />
+                                <SkillComp icon={jsIcon} name="JAVASCRIPT" />
+                                <SkillComp icon={reactIcon} name="REACT" />
+                                <SkillComp icon={adobeIcon} name="ADOBE" />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
